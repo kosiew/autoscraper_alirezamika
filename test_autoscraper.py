@@ -1,4 +1,5 @@
 from autoscraper import AutoScraper
+from pprint import pprint
 
 url = "https://www.thestar.com.my/"
 
@@ -8,4 +9,4 @@ wanted_list = ["After-hours bargains in JB"]
 
 scraper = AutoScraper()
 result = scraper.build(url, wanted_list)
-print(result)
+pprint(result)
